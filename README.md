@@ -1,3 +1,15 @@
+## ひろちが積み上げてきた日々
+
+### [問題0~10までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story1-10.md)
+`zeros`, `size`, `itemsize`, `arange`, `reshape`, `nonzero`
+
+### [問題11~20までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story11-20.md)
+`eye`, `random`, `max`, `min`, `mean`, `pad`, `nan`, `inf`, `スライスの高等テク`
+
+### [問題21~30までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story21-30.md)
+`tile`, `std`, `mean`, `dot`, `np.arrayの扱い`, `random.uniform`, `round`, `trunc`, `floor`, `ceil`, `fix`, `copysign`, `interesect1d`
+
+
 ## 100 numpy exercises
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/rougier/numpy-100/notebooks/100%20Numpy%20exercises.ipynb)
@@ -15,15 +27,3 @@ The keyed text format (`ktx`) is a minimal human readable key-values to store te
 
 This work is licensed under the MIT license.  
 [![DOI](https://zenodo.org/badge/10173/rougier/numpy-100.svg)](https://zenodo.org/badge/latestdoi/10173/rougier/numpy-100)
-
-
-## ひろちが積み上げてきた日々
-
-### [問題0~10までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story1-10.md)
-`zeros`, `size`, `itemsize`, `arange`, `reshape`, `nonzero`
-
-### [問題11~20までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story11-20.md)
-`eye`, `random`, `max`, `min`, `mean`, `pad`, `nan`, `inf`, `スライスの高等テク`
-
-### [問題21~30までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story21-30.md)
-`tile`, `std`, `mean`, `dot`, `np.arrayの扱い`, `random.uniform`, `round`, `trunc`, `floor`, `ceil`, `fix`, `copysign`, `interesect1d`
