@@ -6,6 +6,8 @@
 - [randintの引数について](#randintの引数について)
 - [np.allcloseでarray内が全て等しいかチェック(float版)](#npallcloseでarray内が全て等しいかチェックfloat版)
 - [np.array_equalでarray内が全て等しいかチェック(int版)](#nparray_equalでarray内が全て等しいかチェックint版)
+- [flags.writeablearrayをイミュータブルにする(read-onlyにする)](#flagswriteablearrayをイミュータブルにするread-onlyにする)
+- [sqrtとarctan2を使った極座標への変換方法](#sqrtとarctan2を使った極座標への変換方法)
 
 
 ## 感想
@@ -62,6 +64,7 @@ display(A, B)
 ### np.allcloseでarray内が全て等しいかチェック(float版)
 - 8乗までチェック可能
 - Nanがarrayに存在する時点でFalse(`equal_nan=True`で解除可)
+- [ドキュメント](https://docs.scipy.org/doc/numpy/reference/generated/numpy.allclose.html)
 
 ```python:jupyter.py
 equal = np.allclose(A,B)
@@ -70,9 +73,34 @@ print(equal)
 ```
 
 ### np.array_equalでarray内が全て等しいかチェック(int版)
+- [ドキュメント](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array_equal.html)
 
 ```python:jupyter.py
 equal = np.array_equal(B,B)
 print(equal)
 # True
 ```
+
+### flags.writeablearrayをイミュータブルにする(read-onlyにする)
+
+```python:jupyter.py
+Z = np.zeros(10)
+Z.flags.writeable = False
+Z[0] = 1
+```
+
+### sqrtとarctan2を使った極座標への変換方法
+- ポイントはアークタンジェント関数と引数の設定
+- 関数: `arctan2`
+- 引数: どうやらY軸が先でX軸が後らしいw
+
+```python:jupyter.py
+Z = np.random.random((10,2))
+X,Y = Z[:,0], Z[:,1]
+R = np.sqrt(X**2+Y**2)
+T = np.arctan2(Y,X)
+print(R)
+print(T)
+```
+
+
