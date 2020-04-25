@@ -193,4 +193,39 @@ for dtype in [np.float32, np.float64]:
 # 2.220446049250313e-16
 ```
 
-### 
+### np.set_printoptionsでarrayの表示上限を開放せよ！
+- `np.set_printoptions`の初期値は1000
+- [参考文献](https://note.nkmk.me/python-numpy-set-printoptions-threshold/)
+
+```python
+print(np.get_printoptions())
+# ↓実行結果
+# {'edgeitems': 3, 'threshold': 1000, 'floatmode': 'maxprec', 
+# 'precision': 8,'suppress': False, 'linewidth': 75, 'nanstr': 'nan', 
+# 'infstr': 'inf', 'sign': '-', 'formatter': None, 'legacy': False}
+Z = np.zeros(1001)
+print(Z)
+# ↓実行結果
+# [0. 0. 0. ... 0. 0. 0.]
+```
+
+```python
+np.set_printoptions(threshold=1001)
+Z = np.zeros(1001)
+print(Z)
+# ↓実行結果
+# 無事全て表示されました。(内容は多いから割愛w)
+```
+
+### ベルトルの中で与えられたスカラと一番近い値を探すNumpyの呪文
+- `uniform`で0~100の間のfloatを出す
+- `np.abs(Z-v)`で行列(中には数字)-floatをしてる
+- それを`argmin`で最小値とってきてる
+- 最後に`Z[index]`で共通する`index`の出力してる
+
+```python
+Z = np.arange(100)
+v = np.random.uniform(0,100)
+index = (np.abs(Z-v)).argmin()
+print(Z[index])
+```
