@@ -13,6 +13,7 @@
 `setterr`, `emath.sqrt`, `datetime64`, `add`, `divide`, `negative`, `multiply`, `arange`, `イテレータ(yield)`, `fromiter`, `linspace`, `sort`
 
 ### [問題41~50までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story41-50.md)
+`add.reduce`, `unfunc.reduce`, `randint`, `allclose`, `array_equal`, `flags.writeablearray`, `arctan2`, `argmax`, `nparrayの名前`, `meshgrid`, `subtract.outer`, `linaglg.det`, `int型とfloat型のlimit`, `set_printoptions`, `ベクトルとスカラの近い値`
 
 
 ## 100 numpy exercises

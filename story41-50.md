@@ -13,6 +13,9 @@
 - [meshgridで行列に値を(動的に…？)入れる](#meshgridで行列に値を動的に入れる)
 - [np.subtract.outerは全要素に引き算するけど情報量が多い](#npsubtractouterは全要素に引き算するけど情報量が多い)
 - [np.linalg.detにより一発で行列式が計算できます…w](#nplinalgdetにより一発で行列式が計算できますw)
+- [int8,32,64とfloat32,64が取れる制限について](#int83264とfloat3264が取れる制限について)
+- [np.set_printoptionsでarrayの表示上限を開放せよ！](#npset_printoptionsでarrayの表示上限を開放せよ)
+- [ベルトルの中で与えられたスカラと一番近い値を探すNumpyの呪文](#ベルトルの中で与えられたスカラと一番近い値を探すNumpyの呪文)
 
 
 ## 感想
