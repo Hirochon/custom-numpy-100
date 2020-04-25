@@ -1,18 +1,18 @@
 ## ひろちが積み上げてきた日々
 
-### [問題0~10までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story1-10.md)
+### [問題0~10までで学んだこと](https://github.com/Hirochon/custom-numpy-100/blob/master/story1-10.md)
 `zeros`, `size`, `itemsize`, `arange`, `reshape`, `nonzero`
 
-### [問題11~20までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story11-20.md)
+### [問題11~20までで学んだこと](https://github.com/Hirochon/custom-numpy-100/blob/master/story11-20.md)
 `eye`, `random`, `max`, `min`, `mean`, `pad`, `nan`, `inf`, `スライスの高等テク`
 
-### [問題21~30までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story21-30.md)
+### [問題21~30までで学んだこと](https://github.com/Hirochon/custom-numpy-100/blob/master/story21-30.md)
 `tile`, `std`, `mean`, `dot`, `np.arrayの扱い`, `random.uniform`, `round`, `trunc`, `floor`, `ceil`, `fix`, `copysign`, `interesect1d`
 
-### [問題31~40までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story31-40.md)
+### [問題31~40までで学んだこと](https://github.com/Hirochon/custom-numpy-100/blob/master/story31-40.md)
 `setterr`, `emath.sqrt`, `datetime64`, `add`, `divide`, `negative`, `multiply`, `arange`, `イテレータ(yield)`, `fromiter`, `linspace`, `sort`
 
-### [問題41~50までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story41-50.md)
+### [問題41~50までで学んだこと](https://github.com/Hirochon/custom-numpy-100/blob/master/story41-50.md)
 `add.reduce`, `unfunc.reduce`, `randint`, `allclose`, `array_equal`, `flags.writeablearray`, `arctan2`, `argmax`, `nparrayの名前`, `meshgrid`, `subtract.outer`, `linaglg.det`, `int型とfloat型のlimit`, `set_printoptions`, `ベクトルとスカラの近い値`
 
 
