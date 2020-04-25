@@ -9,6 +9,11 @@
 ### [問題21~30までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story21-30.md)
 `tile`, `std`, `mean`, `dot`, `np.arrayの扱い`, `random.uniform`, `round`, `trunc`, `floor`, `ceil`, `fix`, `copysign`, `interesect1d`
 
+### [問題31~40までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story31-40.md)
+`setterr`, `emath.sqrt`, `datetime64`, `add`, `divide`, `negative`, `multiply`, `arange`, `イテレータ(yield)`, `fromiter`, `linspace`, `sort`
+
+### [問題41~50までで学んだこと](https://github.com/Hirochon/numpy-100/blob/master/story41-50.md)
+
 
 ## 100 numpy exercises
 
