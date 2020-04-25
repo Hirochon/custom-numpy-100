@@ -11,6 +11,8 @@
 - [argmaxを使った配列内の一番大きな数字と0を入れ替える処理](#argmaxを使った配列内の一番大きな数字と0を入れ替える処理)
 - [np行列で次元ごとに名前を与える方法](#np行列で次元ごとに名前を与える方法)
 - [meshgridで行列に値を(動的に…？)入れる](#meshgridで行列に値を動的に入れる)
+- [np.subtract.outerは全要素に引き算するけど情報量が多い](#npsubtractouterは全要素に引き算するけど情報量が多い)
+- [np.linalg.detにより一発で行列式が計算できます…w](#nplinalgdetにより一発で行列式が計算できますw)
 
 
 ## 感想
@@ -138,6 +140,7 @@ display(Z)
 
 ### meshgridで行列に値を(動的に…？)入れる
 - `sparse`で値をx軸,y軸でそれぞれ代入することもできる
+- [ドキュメント](https://docs.scipy.org/doc/numpy/reference/generated/numpy.meshgrid.html)
 
 ```python:jupyter.py
 Z['x'], Z['y'] = np.meshgrid(np.linspace(0,1,5),
@@ -150,3 +153,44 @@ print(Z)
 #  [(0.  , 0.75) (0.25, 0.75) (0.5 , 0.75) (0.75, 0.75) (1.  , 0.75)]
 #  [(0.  , 1.  ) (0.25, 1.  ) (0.5 , 1.  ) (0.75, 1.  ) (1.  , 1.  )]]
 ```
+
+### np.subtract.outerは全要素に引き算するけど情報量が多い
+- [参考文献](https://www.randpy.tokyo/entry/numpy_ufunc)
+
+### np.linalg.detにより一発で行列式が計算できます…w
+- [参考文献](https://www.mathpython.com/ja/numpy-matrix-determinant/)
+
+### int8,32,64とfloat32,64が取れる制限について
+- [ドキュメント](#https://docs.scipy.org/doc/numpy/reference/generated/numpy.finfo.html)
+- intの(8,32,64)について
+
+```python:jupyter.py
+for dtype in [np.int8, np.int32, np.int64]:
+   print(np.iinfo(dtype).min)
+   print(np.iinfo(dtype).max)
+# ↓実行結果
+# -128
+# 127
+# -2147483648
+# 2147483647
+# -9223372036854775808
+# 9223372036854775807
+```
+
+- floatの(32,64)について
+
+```python:jupyter.py
+for dtype in [np.float32, np.float64]:
+   print(np.finfo(dtype).min)
+   print(np.finfo(dtype).max)
+   print(np.finfo(dtype).eps)
+↓実行結果
+# -3.4028235e+38
+# 3.4028235e+38
+# 1.1920929e-07
+# -1.7976931348623157e+308
+# 1.7976931348623157e+308
+# 2.220446049250313e-16
+```
+
+### 
